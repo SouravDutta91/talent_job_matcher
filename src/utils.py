@@ -128,4 +128,4 @@ def plot_cross_val_results(cross_val_results):
     plt.ylabel('Accuracy')
     plt.grid(True)
     plt.show()
-    plt.savefig('images\cv.png', dpi=300)
+    # plt.savefig('images\cv.png', dpi=300)

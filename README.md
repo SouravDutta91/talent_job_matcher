@@ -45,7 +45,7 @@ All dependencies are mentioned in the `requirements.txt` file.
 This file may be used to create a virtual environment using `$ conda create --name <env> --file requirements.txt` where `<env>` is the name of your new virtual environment. This uses `conda` as this project was created using `conda`.
 
 ## Data Analysis
-Features from the raw data are analysed. You can find the complete analysis with suitable plots in the [Analysis](data_analysis.ipynb) notebook.
+Features from the raw data are analysed. You can find the complete analysis with suitable plots in the [analysis](data_analysis.ipynb) notebook.
 
 ## Data Preparation/Prepropcessing
 One of the important things in this project is how the data is preprocessed (see the last section for more details). Each categorical feature is converted to its numerical counterpart using reasonable logic. Code for this logic can be found in the [data_preparation.py](src/data_preparation.py) script.
@@ -57,6 +57,8 @@ Five common classifier models are used to train on the data:
 * [Random Forest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
 * [SVC](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html)
 * [XGBoost](https://xgboost.readthedocs.io/en/stable/python/index.html)
+
+All models are initialized using the Model class in the [model](src/model.py) script.
 
 K-Fold cross-validation is performed on the data with each model to compare them. 
 
